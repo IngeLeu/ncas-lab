@@ -1,3 +1,11 @@
+// Site-wide enhancement stylesheet, kept separate from the base theme for easier maintenance.
+if(!document.querySelector('link[href="enhancements.css"]')){
+  const extraCss=document.createElement('link');
+  extraCss.rel='stylesheet';
+  extraCss.href='enhancements.css';
+  document.head.appendChild(extraCss);
+}
+
 const btn=document.querySelector('.menu-button');
 const links=document.querySelector('.nav-links');
 if(btn&&links){btn.addEventListener('click',()=>links.classList.toggle('open'));}
