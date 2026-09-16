@@ -14,16 +14,22 @@ Then visit `http://localhost:8000`.
 
 ## GitHub Pages
 
-This site has no build dependencies. After creating a GitHub repository, upload these files to the default branch. In **Settings → Pages**, choose either:
+This site has no build dependencies. In **Settings → Pages**, choose **Deploy from a branch** → `main` / root.
 
-1. **Deploy from a branch** → `main` / root, or
-2. **GitHub Actions** and use the included workflow.
+## Current structure
+
+- Home
+- Research
+- Projects
+- People
+- Publications
+- Join us
+- Contact
 
 ## Content to confirm before public launch
 
-- Full current team list and preferred titles
+- Confirm full current team list and preferred titles
 - Profile photos and short bios
-- Which project pages should be highlighted
 - External links (ORCID, Google Scholar, Maastricht profile, GitHub, etc.)
 - Whether publication metrics should remain on the homepage
 - Any Maastricht University branding requirements
