@@ -12,3 +12,13 @@
 .hero-um span{font-size:12px;font-weight:750;line-height:1.25;color:var(--muted);max-width:145px}
 .hero-um:hover{color:var(--ink)}
 @media(max-width:580px){.hero-um img{height:48px;max-width:155px}.hero-um span{font-size:11px}}
+
+/* Homepage wave-interference artwork */
+.hero-wave-art{border-radius:30px;overflow:hidden;background:#f7f7f3;border:1px solid rgba(226,227,223,.95);box-shadow:0 20px 55px rgba(17,24,39,.055);min-height:390px;display:flex;align-items:center}
+.hero-wave-art svg{display:block;width:100%;height:auto}
+.hero-wave-art .env-blue{fill:url(#envBlue)}.hero-wave-art .env-teal{fill:url(#envTeal)}
+.hero-wave-art .guide{fill:none;stroke-width:2;stroke-linecap:round;stroke-dasharray:2 11;opacity:.72}
+.hero-wave-art .guide-blue{stroke:#5d89dc}.hero-wave-art .guide-teal{stroke:#32aeb0}
+.hero-wave-art .wave-main{fill:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+.hero-wave-art .blue{stroke:#315fc8}.hero-wave-art .teal{stroke:#28a7aa}
+@media(max-width:900px){.hero-wave-art{min-height:0}}
