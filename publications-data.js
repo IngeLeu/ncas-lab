@@ -12,7 +12,7 @@ function years(items){
   const groups={}; items.forEach(p=>(groups[p.year]??=[]).push(p));
   return Object.keys(groups).sort((a,b)=>b.localeCompare(a)).map(y=>`<section class="pub-year-block"><h2>${esc(y)}</h2><div class="pub-year-list">${groups[y].map(entry).join("")}</div></section>`).join("");
 }
+const published=[...NCAS_PUBLICATIONS.peer,...NCAS_PUBLICATIONS.chapters.map(p=>({...p,status:"Book chapter"}))];
 root.innerHTML=`
 <section class="section white"><div class="container publication-page"><div class="pub-section-heading"><div><div class="eyebrow">In the pipeline</div><h2>Preprints & submitted manuscripts</h2></div><p>Ongoing work that is publicly available as a preprint or currently under review.</p></div><div class="pipeline-list">${NCAS_PUBLICATIONS.pipeline.map(entry).join("")}</div></div></section>
-<section class="section"><div class="container publication-page"><div class="pub-section-heading"><div><div class="eyebrow">Peer reviewed</div><h2>Journal publications</h2></div><p>Reverse chronological order.</p></div>${years(NCAS_PUBLICATIONS.peer)}</div></section>
-<section class="section white"><div class="container publication-page"><div class="pub-section-heading"><div><div class="eyebrow">Books</div><h2>Book chapters</h2></div></div>${years(NCAS_PUBLICATIONS.chapters)}</div></section>`;
+<section class="section"><div class="container publication-page"><div class="pub-section-heading"><div><div class="eyebrow">Published record</div><h2>Publications</h2></div><p>Journal articles and book chapters in reverse chronological order.</p></div>${years(published)}</div></section>`;
