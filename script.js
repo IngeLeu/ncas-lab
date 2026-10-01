@@ -19,6 +19,6 @@ if(footerGrid&&!document.querySelector('.um-brand')){
   um.target='_blank';
   um.rel='noopener';
   um.setAttribute('aria-label','Maastricht University');
-  um.innerHTML='<img src="https://www.maastrichtuniversity.nl/sites/default/files/styles/780x520/public/2024-05/438x490m-private-content_formfield__files_media__39825__Mdij5L.png?itok=tNTFLkeA" alt="Maastricht University logo" loading="lazy" onerror="this.style.display=\'none\'"><span>Maastricht University</span>';
+  um.innerHTML='<img src="https://www.maastrichtuniversity.nl/sites/default/files/2024-05/438x490m-private-content_formfield__files_media__39825__Mdij5L.png" alt="Maastricht University logo" loading="lazy" onerror="this.style.display=\'none\'"><span>Maastricht University</span>';
   footerGrid.appendChild(um);
 }
